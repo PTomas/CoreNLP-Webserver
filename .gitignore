@@ -1,1 +1,22 @@
+# Azure DevOps specific files
 .azure
+
+# Maven target folder (compiled classes and jars)
+/target/
+
+# Eclipse / IntelliJ / VS Code files
+*.classpath
+*.project
+*.idea/
+*.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Libraries (CoreNLP jars, Javalin jars if not managed by Maven)
+/lib/
+*.jar
