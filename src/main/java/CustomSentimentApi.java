@@ -1,4 +1,4 @@
-package main;
+
 
 import io.javalin.Javalin;
 
@@ -11,8 +11,8 @@ import edu.stanford.nlp.trees.*;
 import edu.stanford.nlp.util.CoreMap;
 
 // import org.ejml.simple.SimpleMatrix;
-
 import java.util.*;
+
 
 public class CustomSentimentApi {
 
@@ -25,7 +25,7 @@ public class CustomSentimentApi {
 
         int port = Integer.parseInt(System.getenv().getOrDefault("PORT", "7000"));
         Javalin app = Javalin.create().start(port);
-
+        System.out.println("Server is listening on port " + port);
         app.get("/sentiment", ctx -> {
 
             String text = ctx.queryParam("text");
